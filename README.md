@@ -2,6 +2,19 @@
 
 테스트 코드들을 성공시키면서 스프링의 사용법, 동작 원리에 대해 알아봅시다!
 
+## 미션 진행 방법
+
+- build.gradle을 참고하여 환경 설정은 스스로 찾아서 한다.
+- 미션을 시작할 때, `해당 기수(앞년도만) + 자신의 영문 이름`으로 브랜치를 파고, 작업 후 각자 브랜치로 커밋, 푸시한다.(예: `24YoonByungWook`)
+- `main` 브랜치는 절대 건들지 말아주세요!!
+- 예시
+```text
+git status
+- On branch main
+git branch 24YoonByungWook
+git checkout 24YoonByungWook
+```
+
 <br/>
 
 ## 0. 초간단 스프링 프로젝트

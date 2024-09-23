@@ -4,13 +4,13 @@
 
 - [초간단 스프링 프로젝트 브랜치](https://github.com/gdsc-konkuk/24-25-study-spring-learning-with-test/tree/simple)
 
-## 1. Spring MVC
-
-- [Spring MVC 브랜치](https://github.com/gdsc-konkuk/24-25-study-spring-learning-with-test/tree/mvc)
-
-## 2. Spring CORE 
+## 1. Spring CORE
 
 - [Spring CORE 브랜치](https://github.com/gdsc-konkuk/24-25-study-spring-learning-with-test/tree/core)
+
+## 2. Spring MVC
+
+- [Spring MVC 브랜치](https://github.com/gdsc-konkuk/24-25-study-spring-learning-with-test/tree/mvc)
 
 ## 3. Spring MVC Config 
 

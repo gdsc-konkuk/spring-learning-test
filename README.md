@@ -1,20 +1,25 @@
 # 📖 Spring MVC Config 학습 테스트
 - Spring MVC Config 기능을 학습하기 위한 테스트 프로젝트
 
-## 테스트 목록
+<br/>
+
+## 📋 테스트 목록
 - addViewControllers: "/" 요청 시 hello.html 페이지 응답하기
 - addInterceptors: "/admin/**" 요청 시 LoginInterceptor 동작하게 하기
 - addArgumentResolvers: AuthenticationPrincipalArgumentResolver 등록하기
 
 > `WebMvcConfiguration` 수정하여 `WebMvcConfigurationTest` 테스트 성공 시키기
 
-## 진행 가이드
-- 클론 받기 `git clone https://github.com/gdsc-konkuk/24-25-study-spring-learning-with-test.git`
+<br/>
+
+## 📌 진행 가이드
 - 체크아웃 브랜치 `git checkout mvc-config`
 - 뼈대 코드로 제공된 프로젝트에서 테스트를 성공 시키기 위해 테스트 코드의 주석을 참고하여 프로덕션 코드를 구현하기
 - 테스트는 [mvc-config](https://github.com/gdsc-konkuk/24-25-study-spring-learning-with-test/tree/mvc-config/src/test/java/nextstep/helloworld/mvcconfig) 디렉토리 하위에 위치
 - [학습 테스트 활용 방법](https://github.com/gdsc-konkuk/24-25-study-spring-learning-with-test/blob/core/README.md#%ED%95%99%EC%8A%B5-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%99%9C%EC%9A%A9-%EB%B0%A9%EB%B2%95)를 참고하여 학습 및 기능 구현
 - 완성 브랜치 [mvc-config-sample](https://github.com/gdsc-konkuk/24-25-study-spring-learning-with-test/tree/mvc-config-sample)를 참고해서 진행해도 좋음 `git checkout mvc-config-sample`
+
+<br/>
 
 ## 학습 테스트 활용 방법
 
@@ -79,6 +84,8 @@ public void addInterceptors(InterceptorRegistry registry) {
 </p>
 
 ---
+
+<br/>
 
 ## 참고 레퍼런스 모음
 - [View Controller](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-config-view-controller)

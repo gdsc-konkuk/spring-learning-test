@@ -93,6 +93,15 @@ create table hello(
 ---
 ## 4. Dao 작성
 - <span class=highlight>쿼리를 메서드에 매핑</span>하여 메서드를 통해 DB에 접근
+- 가장 단순한 쿼리메서드를 통해 DB에 접근하고 데이터를 관리하는 객체를 생성해보자!
+
+기본적인 틀은 다음과 같다. 해결해야 할 문제는 3가지 이다.
+
+1. 어떤 에너테이션을 추가해야 할까?
+2. 유저를 어떻게 추가할까?
+3. 유저의 수를 어떻게 알아낼까?
+
+<br/>
 
 ```java
 package nextstep.helloworld;
@@ -100,7 +109,8 @@ package nextstep.helloworld;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-@Repository
+
+@? //[1번 문제]
 public class HelloDao {
     private JdbcTemplate jdbcTemplate;
 
@@ -108,13 +118,15 @@ public class HelloDao {
         this.jdbcTemplate = jdbcTemplate;
     }
 
+    // [2번 문제]
     public void insert(String name) {
-        String SQL = "insert into HELLO (name) values (?)";
+        String SQL = "?";
         jdbcTemplate.update(SQL, new Object[]{name});
     }
 
+    // [2번 문제]
     public int countByName(String name) {
-        String sql = "select count(1) from HELLO where name=?";
+        String sql = "?";
         return jdbcTemplate.queryForObject(sql, Integer.class, name);
     }
 }
@@ -124,6 +136,7 @@ public class HelloDao {
 ## 5. Controller에서 Dao 사용하기
 - `HelloDao` 객체를 개발자가 직접 생성하지 않고 스프링 컨테이너로 관리하기 위해 `HelloController`에 `HelloDao` 의존을 주입
 - 의존성 주입은 생성자 주입 방법을 추천
+- 그런데 다음 코드에는 1가지 문제가 있다. 어떤 문제인지 생각해보고 `docs/simple.md` 에 작성 후 제출! (아직 제대로 이해하며 학습한게 아니여서 몰라도 상관없음. 나중에 다시 볼거임)
 
 ### 생성자 주입
 ```java

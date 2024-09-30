@@ -1,17 +1,21 @@
 # 📖 Spring Core 학습 테스트
 - Spring Core 기능을 학습하기 위한 테스트 프로젝트
 
+## :arrow_forward: 공지 :arrow_backward:
+
+앞으로 있을 모든 미션에서 지식은 여러분들이 직접 공부하면서 정리하셔야 합니다.
+
+이 미션에서 필요한 레퍼런스는 이미 나눠 드렸습니다!
+지식이라는 건 자신이 자신만의 방법(언어)으로 정리하고 습득하는 것이 가장 효율적입니다. 저는 여러분들께 공부할 수 있는 자료를 나눠 드렸고, 정리 하시는 건 각자 몫입니다.
+
+
+앞으로 각자 공부하는 내용들을 정리해서 `docs/spring-core`에 문서화 해주시면 됩니다.! (만약 블로그를 운영중, 혹은 블로그 포스팅 스터디를 하신다면 이왕 하는거 같이 하면 굿)
+
+질문은 언제나 환영입니다! 대신 디스코드의 질의응답, 채널에 부탁드립니다! 그리고 스터디장(저)도 공부하고 있는 입장이라 부족할 수 있습니다. 아는 선에서 최대한 답변 드리겠습니다!
+
 ## 테스트 목록
 - scan: component scan을 통해 스프링 빈 등록 학습 테스트
 - di: 스프링 빈들의 의존성 주입 학습 테스트
-
-## 진행 가이드
-- 클론 받기 `git clone https://github.com/gdsc-konkuk/24-25-study-spring-learning-with-test.git`
-- 체크아웃 브랜치 `git checkout core`
-- 뼈대 코드로 제공된 프로젝트에서 테스트를 성공 시키기 위해 테스트 코드의 주석을 참고하여 프로덕션 코드를 구현하기
-- 테스트는 [core](https://github.com/gdsc-konkuk/24-25-study-spring-learning-with-test/tree/core/src/test/java/nextstep/helloworld/core) 디렉토리 하위에 위치
-- [학습 테스트 활용 방법](https://github.com/gdsc-konkuk/24-25-study-spring-learning-with-test/blob/core/README.md#%ED%95%99%EC%8A%B5-%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%99%9C%EC%9A%A9-%EB%B0%A9%EB%B2%95)를 참고하여 학습 및 기능 구현
-- 완성 브랜치 [core-sample](https://github.com/gdsc-konkuk/24-25-study-spring-learning-with-test/tree/core-sample)를 참고해서 진행해도 좋음 `git checkout core-sample`
 
 ## 학습 테스트 활용 방법
 
@@ -71,3 +75,8 @@ public class LineService {
 - [Constructor Injection](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-constructor-injection)
 - [Setter Injection](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-setter-injection)
 - [Field Injection](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-autowired-annotation)
+
+<br/>
+
+- 토비의 스프링
+- 구글링(웬만하면 공식 문서를 추천)

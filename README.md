@@ -1,7 +1,7 @@
 # 📖 Spring Core 학습 테스트
 - Spring Core 기능을 학습하기 위한 테스트 프로젝트
 
-## :arrow_forward: 공지 :arrow_backward:
+## :sunny: 공지 :sunny:
 
 앞으로 있을 모든 미션에서 지식은 여러분들이 직접 공부하면서 정리하셔야 합니다.
 

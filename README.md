@@ -12,7 +12,7 @@
 <br/>
 
 ## :pushpin: 진행 가이드
-- 클론 받기 `git clone https://github.com/gdsc-konkuk/24-25-study-spring-learning-with-test.git`
+
 - 체크아웃 브랜치 `git checkout mvc`
 - 뼈대 코드로 제공된 프로젝트에서 테스트를 성공 시키기 위해 테스트 코드의 주석을 참고하여 프로덕션 코드를 구현하기
 - 테스트는 [mvc](https://github.com/gdsc-konkuk/24-25-study-spring-learning-with-test/tree/mvc/src/test/java/nextstep/helloworld/mvc) 디렉토리 하위에 위치

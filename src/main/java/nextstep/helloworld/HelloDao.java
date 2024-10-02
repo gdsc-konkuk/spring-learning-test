@@ -2,9 +2,11 @@ package nextstep.helloworld;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 
-@? //[1번 문제]
+@Service
 public class HelloDao {
     private JdbcTemplate jdbcTemplate;
 
@@ -12,15 +14,15 @@ public class HelloDao {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    // [2번 문제]
+    @Transactional
     public void insert(String name) {
-        String SQL = "?";
+        String SQL = "INSERT INTO hello (name) VALUES (?)";
         jdbcTemplate.update(SQL, new Object[]{name});
     }
 
-    // [2번 문제]
+    @Transactional
     public int countByName(String name) {
-        String sql = "?";
+        String sql = "SELECT COUNT(*) FROM hello WHERE name = ?";
         return jdbcTemplate.queryForObject(sql, Integer.class, name);
     }
 }

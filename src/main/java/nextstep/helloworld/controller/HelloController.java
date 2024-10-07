@@ -15,7 +15,13 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello(@RequestParam(defaultValue = "") String name) {
-        return "Hello " + name;
+        if(name.isEmpty()) {
+            return "HelloWorld!";
+        } else {
+            helloDao.insert(name);
+            int count = helloDao.countByNames(name);
+            return String.format("Hello %s %d번쨰 방문입니다.", name, count);
+        }
     }
 
 }

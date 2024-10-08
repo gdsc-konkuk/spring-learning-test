@@ -1,4 +1,6 @@
 package nextstep.helloworld.core.scan;
 
-public class LineService {
-}
+import org.springframework.stereotype.Service;
+
+@Service
+public class LineService {}

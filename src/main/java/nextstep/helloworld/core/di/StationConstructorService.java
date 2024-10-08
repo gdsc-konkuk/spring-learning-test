@@ -1,9 +1,16 @@
 package nextstep.helloworld.core.di;
 
-public class StationConstructorService {
-    private StationRepository stationRepository;
+import org.springframework.stereotype.Service;
 
-    public String sayHi() {
-        return stationRepository.sayHi();
-    }
+@Service
+public class StationConstructorService {
+  private final StationRepository stationRepository;
+
+  public StationConstructorService(StationRepository stationRepository) {
+    this.stationRepository = stationRepository;
+  }
+
+  public String sayHi() {
+    return stationRepository.sayHi();
+  }
 }

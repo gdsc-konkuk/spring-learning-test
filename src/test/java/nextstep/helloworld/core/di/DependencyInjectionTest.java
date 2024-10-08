@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import java.util.Arrays;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.util.Arrays;
+
 public class DependencyInjectionTest {
-    /**
+	/**
      * TODO: 생성자 주입을 통해 StationConstructorService에 StationRepository 의존성을 주입하기
      */
     @Test

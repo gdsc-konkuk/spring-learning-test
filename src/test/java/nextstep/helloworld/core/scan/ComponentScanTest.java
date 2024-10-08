@@ -4,11 +4,13 @@ import nextstep.helloworld.HelloApplication;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@Component
 public class ComponentScanTest {
     /**
      * TODO: core > scan 패키지 내에 있는 클래스를 스프링 빈으로 등록하기

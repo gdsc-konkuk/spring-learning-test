@@ -1,9 +1,13 @@
 package nextstep.helloworld.core.di;
 
-public class StationFieldService {
-    private StationRepository stationRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-    public String sayHi() {
-        return stationRepository.sayHi();
-    }
+@Service
+public class StationFieldService {
+  @Autowired private StationRepository stationRepository;
+
+  public String sayHi() {
+    return stationRepository.sayHi();
+  }
 }

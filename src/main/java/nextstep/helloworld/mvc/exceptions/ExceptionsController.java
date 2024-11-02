@@ -21,7 +21,7 @@ public class ExceptionsController {
     public ResponseEntity exceptionHandler2() {
         throw new HelloException();
     }
-
+    @ExceptionHandler(CustomException.class)
     public ResponseEntity<String> handle() {
         return ResponseEntity.badRequest().body("CustomException");
     }

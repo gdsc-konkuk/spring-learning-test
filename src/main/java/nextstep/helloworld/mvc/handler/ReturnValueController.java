@@ -10,23 +10,28 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/return-value")
 public class ReturnValueController {
 
-//    public void string() {
-//        return "message";
-//    }
-//
-//    public void responseBodyForUser() {
-//        return new User("name", "email");
-//    }
-//
-//    public void responseEntity(@PathVariable Long id) {
-//        return ResponseEntity.ok(new User("name", "email"));
-//    }
-//
-//    public void responseEntityFor400() {
-//        return ResponseEntity.badRequest().build();
-//    }
-//
-//    public void thymeleaf() {
-//        return "sample";
-//    }
+    @GetMapping(value = "/message")
+    public ResponseEntity<String> string() {
+        return ResponseEntity.ok().body("message");
+    }
+
+    @GetMapping(value = "/users")
+    public ResponseEntity<User> responseBodyForUser() {
+        return ResponseEntity.ok().body(new User("name", "email"));
+    }
+
+    @GetMapping(value = "/users/{id}")
+    public ResponseEntity<User> responseEntity(@PathVariable("id") Long id) {
+        return ResponseEntity.ok(new User("name", "email"));
+    }
+
+    @GetMapping(value = "/members")
+    public ResponseEntity<Void> responseEntityFor400() {
+        return ResponseEntity.badRequest().build();
+    }
+
+    @GetMapping(value = "/thymeleaf", produces = "text/html")
+    public ResponseEntity<String> thymeleaf() {
+        return ResponseEntity.ok().body("Hello");
+    }
 }

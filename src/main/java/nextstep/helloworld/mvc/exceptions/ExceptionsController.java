@@ -2,24 +2,24 @@ package nextstep.helloworld.mvc.exceptions;
 
 import nextstep.helloworld.mvc.exceptions.exception.CustomException;
 import nextstep.helloworld.mvc.exceptions.exception.HelloException;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/exceptions")
 public class ExceptionsController {
 
     @GetMapping("/hello")
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ResponseEntity exceptionHandler() {
-        throw new CustomException();
+        return ResponseEntity.badRequest().body("CustomException");
     }
 
     @GetMapping("/hi")
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ResponseEntity exceptionHandler2() {
-        throw new HelloException();
+        return ResponseEntity.badRequest().body("HelloException");
     }
 
     public ResponseEntity<String> handle() {
